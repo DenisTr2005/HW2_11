@@ -11,7 +11,7 @@ public class StoreService {
     public List<Integer> add(List<Integer> id) {
         return basket.add(id);
     }
-    public Basket get() {
-        return basket.get();
+    public List<Integer> get() {
+        return basket.getId();
     }
 }

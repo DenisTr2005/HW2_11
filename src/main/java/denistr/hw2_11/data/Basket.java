@@ -16,7 +16,4 @@ public class Basket {
     public List<Integer> getId() {
         return id;
     }
-    public Basket get() {
-        return new Basket(id);
-    }
 }

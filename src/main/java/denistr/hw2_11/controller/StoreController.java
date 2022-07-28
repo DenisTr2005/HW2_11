@@ -1,5 +1,4 @@
 package denistr.hw2_11.controller;
-import denistr.hw2_11.data.Basket;
 import denistr.hw2_11.service.StoreService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +17,7 @@ public class StoreController {
         return storeService.add(id);
     }
     @GetMapping("/get")
-    public Basket get() {
+    public List<Integer> get() {
         return storeService.get();
     }
 }
